@@ -1,20 +1,12 @@
 RegisterCommand('idlecamoff', function() -- help2 31, 167, 9
-  TriggerEvent('chat:addMessage', {
-    color = {227,8,0},
-    multiline = true,
-    args = {'[RPEmotes]', 'Idle Cam Is Now Off'}
-  })
+  TriggerEvent("rzr:notify", "Idle Cam ist jetzt aus", "RZR | Emotes")
   DisableIdleCamera(true)
   SetPedCanPlayAmbientAnims(playerPed, false)
   SetResourceKvp("idleCam", "off")
 end)
 
 RegisterCommand('idlecamon', function() -- help2 31, 167, 9
-  TriggerEvent('chat:addMessage', {
-    color = {31,167,9},
-    multiline = true,
-    args = {'[RPEmotes]', 'Idle Cam Is Now On'}
-  })
+  TriggerEvent("rzr:notify", "Idle Cam ist jetzt an", "RZR | Emotes")
   DisableIdleCamera(false)
   SetPedCanPlayAmbientAnims(playerPed, true)
   SetResourceKvp("idleCam", "on")

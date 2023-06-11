@@ -10,7 +10,7 @@ end
 
 function ShowNotification(text)
     if Config.NotificationsAsChatMessage then
-        TriggerEvent("chat:addMessage", { color = { 255, 255, 255 }, args = { tostring(text) } })
+        TriggerEvent("rzr:notify", tostring(text), "RZR | Emotes")
     else
         BeginTextCommandThefeedPost("STRING")
         AddTextComponentSubstringPlayerName(text)
@@ -50,8 +50,7 @@ end
 
 function EmoteChatMessage(msg, multiline)
     if msg then
-        TriggerEvent("chat:addMessage",
-            { multiline = multiline == true or false, color = { 255, 255, 255 }, args = { "^1Help^0", tostring(msg) } })
+        TriggerEvent("rzr:notify", tostring(msg), "RZR | Emotes")
     end
 end
 
@@ -143,7 +142,7 @@ end
 
 function SimpleNotify(message)
     if Config.NotificationsAsChatMessage then
-        TriggerEvent("chat:addMessage", { color = { 255, 255, 255 }, args = { tostring(message) } })
+        TriggerEvent("rzr:notify", tostring(message), "RZR | Emotes")
     else
         BeginTextCommandThefeedPost("STRING")
         AddTextComponentSubstringPlayerName(message)

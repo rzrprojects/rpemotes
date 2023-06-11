@@ -389,19 +389,11 @@ end
 function EmoteCommandStart(source, args, raw)
     if #args > 0 then
         if IsEntityDead(PlayerPedId()) then
-            TriggerEvent('chat:addMessage', {
-                color = {255, 0, 0},
-                multiline = true,
-                args = {"RPEmotes", Config.Languages[lang]['dead']}
-            })
+            TriggerEvent("rzr:notify", Config.Languages[lang]['dead'], "RZR | Emotes")
             return
         end
         if (IsPedSwimming(PlayerPedId()) or IsPedSwimmingUnderWater(PlayerPedId())) and not Config.AllowInWater then
-            TriggerEvent('chat:addMessage', {
-                color = {255, 0, 0},
-                multiline = true,
-                args = {"RPEmotes", Config.Languages[lang]['swimming']}
-            })
+            TriggerEvent("rzr:notify", Config.Languages[lang]['swimming'], "RZR | Emotes")
             return
         end
         local name = string.lower(args[1])

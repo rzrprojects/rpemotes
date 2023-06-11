@@ -466,20 +466,12 @@ end
 function OpenEmoteMenu()
     if IsEntityDead(PlayerPedId()) then
         -- show in chat
-        TriggerEvent('chat:addMessage', {
-            color = {255, 0, 0},
-            multiline = true,
-            args = {"RPEmotes", Config.Languages[lang]['dead']}
-        })
+        TriggerEvent("rzr:notify", Config.Languages[lang]['dead'], "RZR | Emotes")
         return
     end
     if (IsPedSwimming(PlayerPedId()) or IsPedSwimmingUnderWater(PlayerPedId())) and not Config.AllowInWater then
         -- show in chat
-        TriggerEvent('chat:addMessage', {
-            color = {255, 0, 0},
-            multiline = true,
-            args = {"RPEmotes", Config.Languages[lang]['swimming']}
-        })
+        TriggerEvent("rzr:notify", Config.Languages[lang]['swimming'], "RZR | Emotes")
         return
     end
     if _menuPool:IsAnyMenuOpen() then

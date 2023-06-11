@@ -26,13 +26,12 @@ dependencies {
 shared_scripts {
     'config.lua',
     'Translations.lua',
-    'animals.lua',
+    'animals.lua'
 }
 
 server_scripts {
     'server/Server.lua',
-    'server/Updates.lua',
-    'server/frameworks/*.lua'
+    'server/Updates.lua'
 }
 
 client_scripts {
@@ -51,8 +50,7 @@ client_scripts {
     'client/Pointing.lua',
     'client/Ragdoll.lua',
     'client/Syncing.lua',
-    'client/Walk.lua',
-    'client/frameworks/*.lua'
+    'client/Walk.lua'
 }
 
 

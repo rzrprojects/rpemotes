@@ -118,7 +118,7 @@ Languages can be selected and / or added in the config.lua.
 
 - Shared Particle Effects 💨
 
-- QB-Core Framework & SQL Keybinding Support ⚙️
+- SQL Keybinding Support ⚙️
 
 - Further support for shared and couple poses / animations 👫
 
@@ -371,28 +371,6 @@ Alternatively, you can also hide animal emotes.
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-# QB-Core ⚙️
-
-**QBCore integration to match their fork of dpemotes**
-
-- Config option which supports the QB Framework in their fork of the original dpemotes.
-
-If you’re using qb-core, you can now set
-
-```lua
-Framework = "qb-core",
-```
-
-in the config file, otherwise leave it as
-
-```lua
-Framework = false,
-```
-
-*You may need to alter some code within qb-core to work with RPEmotes.*
-
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
 # Prop Extractor ⬇️
 
 Many people have expressed concerns over anticheat scripts kicking or banning their community members due to the fact RPEmotes uses props and anticheats detecting said props being spawned.
@@ -454,8 +432,6 @@ For localhost servers, comment out onesync from your server.cfg and add the foll
 You can put this before your gamebuild enforcement, aka `+set sv_enforceGameBuild XXXX`
 
 * Set the desired language and settings in the config.lua under `MenuLanguage = 'en',`
-
-* Qb-Core server owners, set `Framework = 'qb-core'` in the config file, otherwise leave it as false.
 
 * To use the SQL features, install the [oxmysql](https://github.com/overextended/oxmysql) resource then open `keybinds.lua` in RPEmotes. If you do not want to use the SQL features, comment out the `oxmysql` region in fxmanifest.lua.
 

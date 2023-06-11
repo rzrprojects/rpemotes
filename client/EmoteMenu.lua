@@ -42,7 +42,7 @@ local FavoriteEmote = ""
 
 if Config.FavKeybindEnabled then
     RegisterCommand('emotefav', function() FavKeybind() end)
-    RegisterKeyMapping("emotefav", "Execute your favorite emote", "keyboard", Config.FavKeybind)
+    RegisterKeyMapping("emotefav", "Führe dein Lieblings-Emote aus", "keyboard", Config.FavKeybind)
 
     local doingFavoriteEmote = false
 

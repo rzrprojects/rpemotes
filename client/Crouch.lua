@@ -398,7 +398,7 @@ end
 -- Commands & KeyMapping --
 if Config.CrouchEnabled then
     if Config.CrouchKeybindEnabled then
-        RegisterKeyMapping('+crouch', "Crouch", "keyboard", Config.CrouchKeybind)
+        RegisterKeyMapping('+crouch', "In die Hocke gehen", "keyboard", Config.CrouchKeybind)
         RegisterCommand('+crouch', function() CrouchKeyPressed() end, false)
         RegisterCommand('-crouch', function() end, false) -- This needs to be here to prevent errors/warnings
     end
@@ -415,7 +415,7 @@ end
 
 if Config.CrawlEnabled then
     if Config.CrawlKeybindEnabled then
-        RegisterKeyMapping('crawl', "Crawl", "keyboard", Config.CrawlKeybind)
+        RegisterKeyMapping('crawl', "Kriechen", "keyboard", Config.CrawlKeybind)
     end
     RegisterCommand('crawl', function() CrawlKeyPressed() end, false)
 end

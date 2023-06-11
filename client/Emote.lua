@@ -106,7 +106,7 @@ local function CheckStatusThread(dict, anim)
 end
 
 if Config.EnableXtoCancel then
-    RegisterKeyMapping("emotecancel", "Cancel current emote", "keyboard", Config.CancelEmoteKey)
+    RegisterKeyMapping("emotecancel", "Emote Abbrechen", "keyboard", Config.CancelEmoteKey)
 end
 
 -----------------------------------------------------------------------------------------------------
@@ -140,7 +140,7 @@ if Config.SqlKeybinding then
 end
 if Config.MenuKeybindEnabled then
     RegisterCommand('emoteui', function() OpenEmoteMenu() end, false)
-    RegisterKeyMapping("emoteui", "Open rpemotes menu", "keyboard", Config.MenuKeybind)
+    RegisterKeyMapping("emoteui", "Emote Menü öffnen", "keyboard", Config.MenuKeybind)
 else
     RegisterCommand('emotemenu', function() OpenEmoteMenu() end, false)
 end
@@ -191,7 +191,7 @@ if Config.HandsupEnabled then
     end
 
     if Config.HandsupKeybindEnabled then
-        RegisterKeyMapping("handsup", "Put your arms up", "keyboard", Config.HandsupKeybind)
+        RegisterKeyMapping("handsup", "Hände hoch!", "keyboard", Config.HandsupKeybind)
     end
 end
 

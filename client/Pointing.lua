@@ -118,7 +118,7 @@ if Config.PointingEnabled then
     end, false)
 
     if Config.PointingKeybindEnabled then
-        RegisterKeyMapping("pointing", "Finger pointing", "keyboard", Config.PointingKeybind)
+        RegisterKeyMapping("pointing", "Auf etwas Zeigen", "keyboard", Config.PointingKeybind)
     end
 
     TriggerEvent('chat:addSuggestion', '/pointing', 'Finger pointing.')

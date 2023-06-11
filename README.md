@@ -1,4 +1,5 @@
-# RpEmotes 🏋️
+# RpEmotes (custom version made for rzrprojects)🏋️
+**This is a fork of TayMcKenzieNZ/rpemotes. Nobody (except us, rzrprojects) is supposed to run this on any server! We don't give any support to this and are not responsible if you don't credit the actial creator of this script (we do in a other resource, here it is missing)**
 
 RpEmotes is a community driven FiveM emote menu allowing players to express themselves in roleplay with custom animations, countless facial expressions, walkstyles and props, inspired by [DullPear](https://github.com/andristum/dpemotes).
 
@@ -16,7 +17,7 @@ RpEmotes is a community driven FiveM emote menu allowing players to express them
 
 
 
-# **Join Our Official Discord 💬**
+# **Join the RPEmotes Discord 💬 (for official release, not our version)**
 
 <a href="https://discord.gg/sw3NwDq6C8" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/discord.svg" alt="sw3NwDq6C8" height="120" width="180" /></a>
 
@@ -34,63 +35,11 @@ RpEmotes is a community driven FiveM emote menu allowing players to express them
 
 # Available in 🌏
 
-* Brazilian Portuguese 🇧🇷
-
-* Chinese Simplified 🇨🇳
-
-* Chinese Traditional 🇨🇳
-
-* Czech 🇨🇿
-
-* Danish 🇩🇰
-
-* Dutch 🇳🇱
-
-* English 🇬🇧
-
-* Finnish 🇫🇮
-
-* French 🇫🇷
-
 * German 🇩🇪
-
-* Hungarian 🇭🇺
-
-* Indonesian 🇮🇩
-
-* Italian 🇮🇹
-
-* Norwegian 🇳🇴
-
-* Persian 🇮🇷
-
-* Polish 🇵🇱
-
-* Romanian 🇷🇴
-
-* Russian 🇷🇺
-
-* Sinhala 🇱🇰
-
-* Spanish 🇪🇸
-
-* Swedish 🇸🇪
-
-* Turkish 🇹🇷
-
-* Vietnamese 🇻🇳
-
-All languages were translated or contributed by you, our amazing community with the odd exception of using Google Translate.
-
-If you happen to find any incorrect translations or would like to add more languages, please feel free to make a pull request with the correct / additional translations or join our discord.
-
-Languages can be selected and / or added in the config.lua.
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 # Features 🛠️
-
-- Multiple Translations 🌏
 
 - Search Function 🔎
 
